@@ -1,0 +1,159 @@
+{
+  "contact_info": {
+    "name": "FATAI IDRISSOU",
+    "email": "sifaoufatai@gmail.com",
+    "phone": "0765253509",
+    "linkedin": "www.linkedin.com/in/fatai-idrissou-b69a49217"
+  },
+  "introduction": "ING\u00c9NIEUR EN INTELLIGENCE ARTIFICIELLE",
+  "professional_summary": "Ing\u00e9nieur en intelligence artificielle avec une solide exp\u00e9rience en programmation, data engineering, apprentissage automatique et traitement du langage naturel (NLP). Comp\u00e9tent dans la conception et le d\u00e9veloppement de mod\u00e8les pr\u00e9dictifs, d'applications de standardisation des donn\u00e9es et de tableaux de bord analytiques. Excellentes comp\u00e9tences en collaboration, communication et r\u00e9solution de probl\u00e8mes complexes.",
+  "skills_section": {
+    "core_skills": [
+      "Programmation",
+      "Data Engineering",
+      "Apprentissage automatique",
+      "Traitement du langage naturel (NLP)",
+      "Conception de mod\u00e8les pr\u00e9dictifs",
+      "Gestion de projet",
+      "Administration syst\u00e8me",
+      "Collaboration et communication",
+      "R\u00e9solution de probl\u00e8mes"
+    ],
+    "tools_and_technologies": [
+      "Python",
+      "Java",
+      "C++",
+      "C",
+      "PHP",
+      "Julia",
+      "R",
+      "JavaScript",
+      "SHELL",
+      "PL/pgSQL",
+      "NumPy",
+      "Pandas",
+      "Scikit-Learn",
+      "TensorFlow",
+      "Keras",
+      "PyTorch",
+      "Matplotlib",
+      "Talend",
+      "Power BI",
+      "Qlik",
+      "Hadoop",
+      "Ansible",
+      "Docker",
+      "Microsoft Azure",
+      "MySQL",
+      "PostgreSQL",
+      "NoSQL"
+    ],
+    "languages": [
+      "Fran\u00e7ais",
+      "Anglais"
+    ]
+  },
+  "work_experience": [
+    {
+      "company": "CNRS (Institut de Neuroscience de la Timone)",
+      "job_title": "Alternant",
+      "start_date": "2023",
+      "end_date": "2025",
+      "location": "Marseille, France",
+      "achievements": [
+        "Conception et d\u00e9veloppement d'une application de standardisation des donn\u00e9es (BIDS), incluant la conception, les tests et le d\u00e9ploiement.",
+        "Participation \u00e0 la conception des fonctionnalit\u00e9s de l'application.",
+        "Conception des formulaires de m\u00e9tadonn\u00e9es par modalit\u00e9 avec Elab.",
+        "Coordination des retours utilisateurs pour am\u00e9liorer les versions des applications.",
+        "Organisation de r\u00e9unions avec les utilisateurs et les \u00e9quipes projet.",
+        "Planification et suivi des diff\u00e9rentes phases de d\u00e9veloppement.",
+        "Cr\u00e9ation et configuration de machines virtuelles sur un serveur distant via Proxmox.",
+        "D\u00e9ploiement de l'application BIDS sur diff\u00e9rents environnements (macOS, serveurs, Linux)."
+      ],
+      "used_skills_and_tools": [
+        "Python",
+        "Gestion de projet",
+        "Proxmox",
+        "macOS",
+        "Linux",
+        "D\u00e9veloppement d'applications",
+        "Standardisation des donn\u00e9es"
+      ]
+    }
+  ],
+  "volunteer_experience": null,
+  "projects": [
+    {
+      "project_name": "Pr\u00e9diction du d\u00e9part des soci\u00e9taires d\u2019un organisme bancaire",
+      "description": "D\u00e9veloppement d'un mod\u00e8le pr\u00e9dictif pour identifier les soci\u00e9taires \u00e0 risque de quitter l\u2019organisme bancaire.",
+      "technologies_used": [
+        "Python",
+        "Machine Learning"
+      ],
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "project_name": "Tableau de bord de vente",
+      "description": "Utilisation de Power BI et Qlik pour analyser les ventes, marges et revenus.",
+      "technologies_used": [
+        "Power BI",
+        "Qlik"
+      ],
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "project_name": "Conception d'un mod\u00e8le NLP pour l'analyse des sentiments",
+      "description": "Collecte, pr\u00e9traitement et conception de mod\u00e8le avec des r\u00e9seaux de neurones pour l'analyse des sentiments.",
+      "technologies_used": [
+        "Python",
+        "NLP",
+        "R\u00e9seaux de neurones"
+      ],
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "project_name": "Pr\u00e9diction des niveaux de nappe phr\u00e9atique et s\u00e9quen\u00e7age d'ADN",
+      "description": "D\u00e9veloppement d'un mod\u00e8le LSTM pour pr\u00e9dire les variations des niveaux de nappe phr\u00e9atique \u00e0 partir de donn\u00e9es historiques. Utilisation de mod\u00e8les GRU pour la pr\u00e9diction des s\u00e9quences d'ADN.",
+      "technologies_used": [
+        "LSTM",
+        "GRU",
+        "Python"
+      ],
+      "start_date": null,
+      "end_date": null
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universit\u00e9 d'Avignon",
+      "degree": "Master",
+      "field_of_study": "Intelligence artificielle",
+      "graduation_year": 2025
+    },
+    {
+      "institution": "Universit\u00e9 d'Avignon",
+      "degree": "Licence 3",
+      "field_of_study": "G\u00e9nie Logiciel",
+      "graduation_year": 2023
+    }
+  ],
+  "publications": null,
+  "awards": null,
+  "affiliations": null,
+  "references": null,
+  "certifications": null,
+  "language_proficiency": [
+    {
+      "language": "Fran\u00e7ais",
+      "proficiency_level": "Avanc\u00e9"
+    },
+    {
+      "language": "Anglais",
+      "proficiency_level": "Interm\u00e9diaire"
+    }
+  ],
+  "hobbies_and_interests": null
+}

@@ -1,0 +1,108 @@
+Prédiction du départ
+des socié taires d’un
+organisme bancair e
+Tableau de bor d de
+vente
+Conception d'un
+modèle NLP  pour
+l'analy se des
+sentimen ts.
+Prédiction des
+niveaux de nappe
+phréatique e t
+séquençag e d'ADN
+Programma tion
+Data Engineering
+Apprentissag e
+automa tique e t
+traitemen t du
+langag e na turel
+(NLP)
+Frame works e t
+biblio thèques AI
+Collabor ation e t
+communica tion
+Résolution de
+problèmesFATAI
+IDRISSOU
+INGÉNIEUR EN
+INTELLIGENCE ARTIFICIELLE
+Français
+Anglais
+Programma tion 
+Python
+Java
+C++
+C
+PHP
+Julia
+R
+JavaScript
+SHELL
+PL/pgSQL
+Machine L earning/D ata Scienc e 
+NumPy
+Pandas
+Scikit-L earn
+Tensor Flow
+Keras
+PyTorch
+Matplotlib
+Talend
+Power BI / Q lik
+Hadoop
+DevOps
+Ansible
+Docker
+Microsoft Azur e
+Bases de D onnées
+MySQL
+Postgr eSQL
+NoSQLAlternan t De 2023  à 2025
+CNRS (I nstitut de N euroscienc e de la Timone ) Marseille (F rance)
+Conception e t développemen t d'une applica tion de standar disation des données :
+Développemen t de l' applica tion BIDS , incluan t la c onception, les t ests e t le déploiemen t.
+Participa tion à la c onception des f onctionnalit és de l' applica tion.
+Conception des f ormulair es de mé tadonnées par  modalit é avec Elab.
+Gestion de pr ojet :
+Coordination des r etours utilisa teurs pour  amélior er les versions des applica tions.
+Organisa tion de r éunions a vec les utilisa teurs et les équipes pr ojet.
+Planiﬁca tion e t suivi des diff érentes phases de dé veloppemen t.
+Administr ation s ystème :
+Création e t conﬁgur ation de machines virtuelles sur  un serv eur distan t via Proxmo x.
+Déploiemen t de l' applica tion BIDS  sur différents en vironnemen ts (macOS, serv eurs, Linux).
+Développemen t d'un modèle pr édictif  pour  iden tiﬁer  les socié taires à risque
+de quitt er l’organisme bancair e
+ Power BI , Q lik pour  analy ser les ventes, mar ges etrevenus.
+Collect e, prétraitemen t et conception de modèle a vec des r éseaux de
+neur ones pour  l'analy se des sen timen ts.
+Développemen t d'un modèle LSTM pour  prédire les variations des niv eaux
+de nappe phr éatique à partir  de données hist oriques. U tilisa tion de modèles
+GRU pour  la pr édiction des séquenc es d' ADN
+Programma tion : M aîtrise de langag es tels que Python, Java, C++, pour
+développer  des alg orithmes , des modèles e t des applica tions
+Data Engineering : C ompé tences dans la manipula tion e t la g estion des
+données, y compris la c ollect e, le ne ttoyage et l'analy se des données.
+Compr éhension des c oncepts et techniques d' appr entissag e supervisé, non
+supervisé e t par  renforcemen t, ainsi que des mé thodes d' analy se et de
+compr éhension du langag e humain.
+Familiarit é avec des outils e t des biblio thèques c omme  Tensor Flow, PyTorch,
+Keras, S cikit-learn, e tc
+Compé tences in terper sonnelles pour  travailler  en équipe e t expliquer  des
+concepts techniques à des non-spécialist es.
+Capacit é à analy ser des pr oblèmes c omple xes et à dé velopper  des solutions
+innovantes
+Master en in telligence artiﬁcielle  De 2023  à 2025
+Université d'Avignon  Avignon
+Licence 3 G énie L ogiciel  De 2022  à 2023
+université d'avignon  Avignon, F rance
+sifaouf atai@gmail.c om 
+www .linkedin.c om/in/ fatai-idrissou-
+b69a49217
+France 
+0765253509 À PROPOS
+LANGUES
+ATOUT SEXPÉRIENCES
+PROJET
+COMPÉTENCES
+DIPL ÔMES ET  FORMA TIONS

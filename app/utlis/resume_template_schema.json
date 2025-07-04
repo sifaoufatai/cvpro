@@ -1,0 +1,803 @@
+{
+  "$defs": {
+    "Affiliation": {
+      "description": "Professional or academic affiliations.",
+      "properties": {
+        "organization": {
+          "description": "Organization name.",
+          "title": "Organization",
+          "type": "string"
+        },
+        "role": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Role or title held.",
+          "title": "Role"
+        },
+        "membership_date": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Affiliation start date.",
+          "title": "Membership Date"
+        }
+      },
+      "required": [
+        "organization"
+      ],
+      "title": "Affiliation",
+      "type": "object"
+    },
+    "Award": {
+      "description": "Recognition or honor received by the candidate.",
+      "properties": {
+        "title": {
+          "description": "Title of the award or honor.",
+          "title": "Title",
+          "type": "string"
+        },
+        "issuer": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Organization that issued the award.",
+          "title": "Issuer"
+        },
+        "date": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Date of the award.",
+          "title": "Date"
+        },
+        "description": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Short context of the award.",
+          "title": "Description"
+        }
+      },
+      "required": [
+        "title"
+      ],
+      "title": "Award",
+      "type": "object"
+    },
+    "ContactInfo": {
+      "description": "Basic contact details of the candidate.",
+      "properties": {
+        "name": {
+          "description": "Full name of the candidate.",
+          "title": "Name",
+          "type": "string"
+        },
+        "email": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Email address.",
+          "title": "Email"
+        },
+        "phone": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Phone number.",
+          "title": "Phone"
+        },
+        "linkedin": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "LinkedIn profile URL.",
+          "title": "Linkedin"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "title": "ContactInfo",
+      "type": "object"
+    },
+    "Education": {
+      "description": "Educational qualification details.",
+      "properties": {
+        "institution": {
+          "description": "Name of the educational institution.",
+          "title": "Institution",
+          "type": "string"
+        },
+        "degree": {
+          "description": "Degree obtained.",
+          "title": "Degree",
+          "type": "string"
+        },
+        "field_of_study": {
+          "description": "Field of study.",
+          "title": "Field Of Study",
+          "type": "string"
+        },
+        "graduation_year": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Year of graduation.",
+          "title": "Graduation Year"
+        }
+      },
+      "required": [
+        "institution",
+        "degree",
+        "field_of_study"
+      ],
+      "title": "Education",
+      "type": "object"
+    },
+    "HobbiesAndInterests": {
+      "description": "Represents a candidate's hobbies and interests.",
+      "properties": {
+        "hobbies": {
+          "description": "List of hobbies and interests.",
+          "items": {
+            "type": "string"
+          },
+          "title": "Hobbies",
+          "type": "array"
+        },
+        "description": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Brief description of the hobbies or interests.",
+          "title": "Description"
+        }
+      },
+      "required": [
+        "hobbies"
+      ],
+      "title": "HobbiesAndInterests",
+      "type": "object"
+    },
+    "LanguageProficiency": {
+      "description": "Represents a candidate's language proficiency.",
+      "properties": {
+        "language": {
+          "description": "Language name.",
+          "title": "Language",
+          "type": "string"
+        },
+        "proficiency_level": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Proficiency level (e.g., 'Beginner', 'Intermediate', 'Advanced').",
+          "title": "Proficiency Level"
+        }
+      },
+      "required": [
+        "language"
+      ],
+      "title": "LanguageProficiency",
+      "type": "object"
+    },
+    "Project": {
+      "description": "Information about a personal or academic project.",
+      "properties": {
+        "project_name": {
+          "description": "Project title.",
+          "title": "Project Name",
+          "type": "string"
+        },
+        "description": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Short description of the project.",
+          "title": "Description"
+        },
+        "technologies_used": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Technologies used in the project.",
+          "title": "Technologies Used"
+        },
+        "start_date": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Project start date.",
+          "title": "Start Date"
+        },
+        "end_date": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Project end date.",
+          "title": "End Date"
+        }
+      },
+      "required": [
+        "project_name"
+      ],
+      "title": "Project",
+      "type": "object"
+    },
+    "Publication": {
+      "description": "Details of a published work.",
+      "properties": {
+        "title": {
+          "description": "Title of the publication.",
+          "title": "Title",
+          "type": "string"
+        },
+        "journal_or_source": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Journal, website, or source.",
+          "title": "Journal Or Source"
+        },
+        "publication_date": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Publication date (e.g. YYYY-MM).",
+          "title": "Publication Date"
+        },
+        "link": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "URL to the publication.",
+          "title": "Link"
+        }
+      },
+      "required": [
+        "title"
+      ],
+      "title": "Publication",
+      "type": "object"
+    },
+    "Reference": {
+      "description": "Professional reference contact details.",
+      "properties": {
+        "name": {
+          "description": "Reference's full name.",
+          "title": "Name",
+          "type": "string"
+        },
+        "relationship": {
+          "description": "Relationship to the candidate.",
+          "title": "Relationship",
+          "type": "string"
+        },
+        "email": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Email address of the reference.",
+          "title": "Email"
+        },
+        "phone": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Phone number of the reference.",
+          "title": "Phone"
+        }
+      },
+      "required": [
+        "name",
+        "relationship"
+      ],
+      "title": "Reference",
+      "type": "object"
+    },
+    "SkillSection": {
+      "description": "Core skills, tools, and languages.",
+      "properties": {
+        "core_skills": {
+          "description": "Key skills relevant to the candidate's field.",
+          "items": {
+            "type": "string"
+          },
+          "title": "Core Skills",
+          "type": "array"
+        },
+        "tools_and_technologies": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Tools, software, or technologies used.",
+          "title": "Tools And Technologies"
+        },
+        "languages": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Spoken or written languages.",
+          "title": "Languages"
+        }
+      },
+      "required": [
+        "core_skills"
+      ],
+      "title": "SkillSection",
+      "type": "object"
+    },
+    "VolunteerExperience": {
+      "description": "Details of volunteer or community service.",
+      "properties": {
+        "organization": {
+          "description": "Organization name.",
+          "title": "Organization",
+          "type": "string"
+        },
+        "role": {
+          "description": "Role or title.",
+          "title": "Role",
+          "type": "string"
+        },
+        "start_date": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Start date.",
+          "title": "Start Date"
+        },
+        "end_date": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "End date.",
+          "title": "End Date"
+        },
+        "responsibilities": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Duties performed.",
+          "title": "Responsibilities"
+        }
+      },
+      "required": [
+        "organization",
+        "role"
+      ],
+      "title": "VolunteerExperience",
+      "type": "object"
+    },
+    "WorkExperience": {
+      "description": "Details of a professional employment period.",
+      "properties": {
+        "company": {
+          "description": "Company name.",
+          "title": "Company",
+          "type": "string"
+        },
+        "job_title": {
+          "description": "Job title held.",
+          "title": "Job Title",
+          "type": "string"
+        },
+        "start_date": {
+          "description": "Start date (e.g. YYYY-MM).",
+          "title": "Start Date",
+          "type": "string"
+        },
+        "end_date": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "End date (e.g. YYYY-MM or 'Present').",
+          "title": "End Date"
+        },
+        "location": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Location of the role.",
+          "title": "Location"
+        },
+        "achievements": {
+          "description": "Key achievements and responsibilities.",
+          "items": {
+            "type": "string"
+          },
+          "title": "Achievements",
+          "type": "array"
+        },
+        "used_skills_and_tools": {
+          "description": "Skills and tools used in this role.",
+          "items": {
+            "type": "string"
+          },
+          "title": "Used Skills And Tools",
+          "type": "array"
+        }
+      },
+      "required": [
+        "company",
+        "job_title",
+        "start_date",
+        "achievements",
+        "used_skills_and_tools"
+      ],
+      "title": "WorkExperience",
+      "type": "object"
+    }
+  },
+  "description": "Comprehensive structured representation of a candidate's resume.",
+  "properties": {
+    "contact_info": {
+      "$ref": "#/$defs/ContactInfo",
+      "description": "Candidate's contact information."
+    },
+    "introduction": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Optional introduction or headline.",
+      "title": "Introduction"
+    },
+    "professional_summary": {
+      "description": "Professional summary or career objective.",
+      "title": "Professional Summary",
+      "type": "string"
+    },
+    "skills_section": {
+      "$ref": "#/$defs/SkillSection",
+      "description": "Skills grouped by type, adaptable to any profession."
+    },
+    "work_experience": {
+      "description": "List of professional work experiences.",
+      "items": {
+        "$ref": "#/$defs/WorkExperience"
+      },
+      "title": "Work Experience",
+      "type": "array"
+    },
+    "volunteer_experience": {
+      "anyOf": [
+        {
+          "items": {
+            "$ref": "#/$defs/VolunteerExperience"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "List of volunteer work.",
+      "title": "Volunteer Experience"
+    },
+    "projects": {
+      "anyOf": [
+        {
+          "items": {
+            "$ref": "#/$defs/Project"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "List of personal or academic projects.",
+      "title": "Projects"
+    },
+    "education": {
+      "anyOf": [
+        {
+          "items": {
+            "$ref": "#/$defs/Education"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "Educational background.",
+      "title": "Education"
+    },
+    "publications": {
+      "anyOf": [
+        {
+          "items": {
+            "$ref": "#/$defs/Publication"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "Published works.",
+      "title": "Publications"
+    },
+    "awards": {
+      "anyOf": [
+        {
+          "items": {
+            "$ref": "#/$defs/Award"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "Awards and honors received.",
+      "title": "Awards"
+    },
+    "affiliations": {
+      "anyOf": [
+        {
+          "items": {
+            "$ref": "#/$defs/Affiliation"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "Memberships or affiliations.",
+      "title": "Affiliations"
+    },
+    "references": {
+      "anyOf": [
+        {
+          "items": {
+            "$ref": "#/$defs/Reference"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "Professional references.",
+      "title": "References"
+    },
+    "certifications": {
+      "anyOf": [
+        {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "Certifications earned.",
+      "title": "Certifications"
+    },
+    "language_proficiency": {
+      "anyOf": [
+        {
+          "items": {
+            "$ref": "#/$defs/LanguageProficiency"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "Languages and proficiency levels.",
+      "title": "Language Proficiency"
+    },
+    "hobbies_and_interests": {
+      "anyOf": [
+        {
+          "items": {
+            "$ref": "#/$defs/HobbiesAndInterests"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Candidate's hobbies and interests.",
+      "title": "Hobbies And Interests"
+    }
+  },
+  "required": [
+    "contact_info",
+    "professional_summary",
+    "skills_section",
+    "work_experience"
+  ],
+  "title": "ResumeTemplate",
+  "type": "object"
+}

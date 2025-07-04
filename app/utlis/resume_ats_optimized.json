@@ -1,0 +1,71 @@
+{
+  "contact_info": {
+    "name": "FATAI IDRISSOU",
+    "email": "sifaoufatai@gmail.com",
+    "phone": "+33 7 65 25 35 09",
+    "linkedin": "linkedin.com/in/fatai-idrissou-b69a49217",
+    "location": "Marseille, France"
+  },
+  "summary": "AI Engineer with expertise in Machine Learning, Data Engineering, and NLP. Proven track record in developing predictive models, data standardization applications, and analytical dashboards. Strong collaborator with excellent problem-solving and communication skills.",
+  "skills": [
+    "Machine Learning",
+    "Python", "TensorFlow", "PyTorch", "Scikit-Learn",
+    "Data Engineering", "SQL", "Big Data", "ETL",
+    "Natural Language Processing (NLP)",
+    "Data Visualization", "Power BI", "Matplotlib",
+    "Cloud Platforms", "Docker", "Linux"
+  ],
+  "experience": [
+    {
+      "title": "AI Engineer Apprentice",
+      "company": "CNRS - Institut de Neuroscience de la Timone",
+      "location": "Marseille, France",
+      "dates": "2023 - Present",
+      "achievements": [
+        "Designed and developed a BIDS-compliant data standardization application, including testing and deployment",
+        "Led requirement gathering and user feedback sessions to improve application features",
+        "Created metadata forms for different modalities using Elab",
+        "Managed project timelines and coordinated development phases",
+        "Deployed applications across multiple environments (macOS, Linux, servers)"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master's in Artificial Intelligence",
+      "institution": "Université d'Avignon",
+      "year": 2025
+    },
+    {
+      "degree": "Bachelor's in Software Engineering",
+      "institution": "Université d'Avignon",
+      "year": 2023
+    }
+  ],
+  "projects": [
+    {
+      "name": "Bank Customer Churn Prediction",
+      "description": "Developed ML model to predict customer churn for a banking institution, improving retention strategies.",
+      "technologies": "Python, Scikit-learn, Pandas, NumPy"
+    },
+    {
+      "name": "Sales Analytics Dashboard",
+      "description": "Created interactive dashboards for sales, margin, and revenue analysis using Power BI and Qlik.",
+      "technologies": "Power BI, Qlik, SQL"
+    },
+    {
+      "name": "Sentiment Analysis with Neural Networks",
+      "description": "Built and deployed an NLP model for sentiment analysis using deep learning techniques.",
+      "technologies": "Python, TensorFlow, NLP, Neural Networks"
+    },
+    {
+      "name": "Groundwater Level Prediction & DNA Sequencing",
+      "description": "Developed LSTM and GRU models for groundwater level prediction and DNA sequence analysis.",
+      "technologies": "Python, LSTM, GRU, Time Series Analysis"
+    }
+  ],
+  "languages": [
+    {"language": "French", "level": "Native"},
+    {"language": "English", "level": "Professional Working Proficiency"}
+  ]
+}
