@@ -1,0 +1,4 @@
+resume-parser
+resume-parser==0.1.0
+OpenAI
+pydantic

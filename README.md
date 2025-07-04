@@ -1,2 +1,2 @@
 # cvpro
-This project aims to create and edit professional CVs
+This project helps users create and edit professional, ATS-compliant CVs. It ensures that the content and structure of the CV are optimized for compatibility with Applicant Tracking Systems used by recruiters.
